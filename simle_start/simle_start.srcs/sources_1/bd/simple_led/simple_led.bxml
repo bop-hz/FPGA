@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="35">
   <CompositeFile CompositeFileTopName="simple_led" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1524942630"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1524942630"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1524942630"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1524942630"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1525158439"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1525158439"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1525158439"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1525158439"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\simple_led_processing_system7_0_0\simple_led_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
@@ -49,6 +49,22 @@
       </File>
       <File Name="ip\simple_led_xbar_0\simple_led_xbar_0.xci" Type="IP">
         <Instance HierarchyPath="ps7_0_axi_periph/xbar"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\simple_led_axi_timer_0_0\simple_led_axi_timer_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_timer_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\simple_led_xlconcat_0_0\simple_led_xlconcat_0_0.xci" Type="IP">
+        <Instance HierarchyPath="xlconcat_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

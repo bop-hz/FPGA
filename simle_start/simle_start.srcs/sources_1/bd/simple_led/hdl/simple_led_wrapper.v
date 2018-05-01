@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-//Date        : Sat Apr 28 21:10:08 2018
+//Date        : Tue May  1 09:06:56 2018
 //Host        : DESKTOP-55SCUS4 running 64-bit major release  (build 9200)
 //Command     : generate_target simple_led_wrapper.bd
 //Design      : simple_led_wrapper

@@ -19,6 +19,9 @@ vlib questa_lib/msim/axi_register_slice_v2_1_16
 vlib questa_lib/msim/fifo_generator_v13_2_2
 vlib questa_lib/msim/axi_data_fifo_v2_1_15
 vlib questa_lib/msim/axi_crossbar_v2_1_17
+vlib questa_lib/msim/lib_pkg_v1_0_2
+vlib questa_lib/msim/axi_timer_v2_0_18
+vlib questa_lib/msim/xlconcat_v2_1_1
 vlib questa_lib/msim/axi_protocol_converter_v2_1_16
 
 vmap xilinx_vip questa_lib/msim/xilinx_vip
@@ -39,6 +42,9 @@ vmap axi_register_slice_v2_1_16 questa_lib/msim/axi_register_slice_v2_1_16
 vmap fifo_generator_v13_2_2 questa_lib/msim/fifo_generator_v13_2_2
 vmap axi_data_fifo_v2_1_15 questa_lib/msim/axi_data_fifo_v2_1_15
 vmap axi_crossbar_v2_1_17 questa_lib/msim/axi_crossbar_v2_1_17
+vmap lib_pkg_v1_0_2 questa_lib/msim/lib_pkg_v1_0_2
+vmap axi_timer_v2_0_18 questa_lib/msim/axi_timer_v2_0_18
+vmap xlconcat_v2_1_1 questa_lib/msim/xlconcat_v2_1_1
 vmap axi_protocol_converter_v2_1_16 questa_lib/msim/axi_protocol_converter_v2_1_16
 
 vlog -work xilinx_vip -64 -sv -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_2 -L axi_vip_v1_1_2 -L processing_system7_vip_v1_0_4 -L xilinx_vip "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/ec67/hdl" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/02c8/hdl/verilog" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/b193/hdl" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
@@ -123,6 +129,21 @@ vlog -work axi_crossbar_v2_1_17 -64 "+incdir+../../../../simle_start.srcs/source
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/ec67/hdl" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/02c8/hdl/verilog" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/b193/hdl" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/ec67/hdl" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/02c8/hdl/verilog" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/b193/hdl" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
 "../../../bd/simple_led/ip/simple_led_xbar_0/sim/simple_led_xbar_0.v" \
+
+vcom -work lib_pkg_v1_0_2 -64 -93 \
+"../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
+
+vcom -work axi_timer_v2_0_18 -64 -93 \
+"../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/cf75/hdl/axi_timer_v2_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -64 -93 \
+"../../../bd/simple_led/ip/simple_led_axi_timer_0_0/sim/simple_led_axi_timer_0_0.vhd" \
+
+vlog -work xlconcat_v2_1_1 -64 "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/ec67/hdl" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/02c8/hdl/verilog" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/b193/hdl" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/ec67/hdl" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/02c8/hdl/verilog" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/b193/hdl" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
+"../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib -64 "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/ec67/hdl" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/02c8/hdl/verilog" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/b193/hdl" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/ec67/hdl" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/02c8/hdl/verilog" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/b193/hdl" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
+"../../../bd/simple_led/ip/simple_led_xlconcat_0_0/sim/simple_led_xlconcat_0_0.v" \
 
 vlog -work axi_protocol_converter_v2_1_16 -64 "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/ec67/hdl" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/02c8/hdl/verilog" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/b193/hdl" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/ec67/hdl" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/02c8/hdl/verilog" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/b193/hdl" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
 "../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/1229/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

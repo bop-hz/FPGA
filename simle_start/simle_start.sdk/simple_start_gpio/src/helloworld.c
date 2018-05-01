@@ -1,130 +1,234 @@
-/******************************************************************************
-*
-* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
-*
-* Permission is hereby granted, free of charge, to any person obtaining a copy
-* of this software and associated documentation files (the "Software"), to deal
-* in the Software without restriction, including without limitation the rights
-* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-* copies of the Software, and to permit persons to whom the Software is
-* furnished to do so, subject to the following conditions:
-*
-* The above copyright notice and this permission notice shall be included in
-* all copies or substantial portions of the Software.
-*
-* Use of the Software is limited solely to applications:
-* (a) running on a Xilinx device, or
-* (b) that interact with a Xilinx device through a bus or interconnect.
-*
-* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-* WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
-* OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-* SOFTWARE.
-*
-* Except as contained in this notice, the name of the Xilinx shall not be used
-* in advertising or otherwise to promote the sale, use or other dealings in
-* this Software without prior written authorization from Xilinx.
-*
-******************************************************************************/
-
 /*
- * helloworld.c: simple test application
+ * interrupt_counter_tut_2B.c
  *
- * This application configures UART 16550 to baud rate 9600.
- * PS7 UART (Zynq) is not initialized by this application, since
- * bootrom/bsp configures it to baud rate 115200
- *
- * ------------------------------------------------
- * | UART TYPE   BAUD RATE                        |
- * ------------------------------------------------
- *   uartns550   9600
- *   uartlite    Configurable only in HW design
- *   ps7_uart    115200 (configured by bootrom/bsp)
+ *  Created on: 	Unknown
+ *      Author: 	Ross Elliot
+ *     Version:		1.1
  */
 
-#include <stdio.h>
-#include "platform.h"
-#include "xil_printf.h"
+/********************************************************************************************
+
+* VERSION HISTORY
+********************************************************************************************
+* 	v1.1 - 01/05/2015
+* 		Updated for Zybo ~ DN
+*
+*	v1.0 - Unknown
+*		First version created.
+*******************************************************************************************/
+
 #include "xparameters.h"
 #include "xgpio.h"
+#include "xtmrctr.h"
 #include "xscugic.h"
 #include "xil_exception.h"
-#define INTC_GPIO_INTERRUPT_ID	XPAR_FABRIC_AXI_GPIO_1_IP2INTC_IRPT_INTR
-#define INTC_DEVICE_ID	XPAR_PS7_SCUGIC_0_DEVICE_ID
+#include "xil_printf.h"
 
-#define GPIO_LED_DEVICE_ID  XPAR_AXI_GPIO_0_DEVICE_ID
-#define GPIO_BUTTON_DEVICE_ID XPAR_AXI_GPIO_1_DEVICE_ID
-#define Delay 10000000L
-#define LED 1
-#define BTN_INT XGPIO_IR_CH1_MASK
+// Parameter definitions
+#define INTC_DEVICE_ID 		XPAR_PS7_SCUGIC_0_DEVICE_ID
+#define TMR_DEVICE_ID		XPAR_TMRCTR_0_DEVICE_ID
+#define BTNS_DEVICE_ID		XPAR_AXI_GPIO_1_DEVICE_ID
+#define LEDS_DEVICE_ID		XPAR_AXI_GPIO_0_DEVICE_ID
+#define INTC_GPIO_INTERRUPT_ID XPAR_FABRIC_AXI_GPIO_1_IP2INTC_IRPT_INTR
+#define INTC_TMR_INTERRUPT_ID XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR
+
+#define BTN_INT 			XGPIO_IR_CH1_MASK
+#define TMR_LOAD			0xF8000000
+
+XGpio LEDInst, BTNInst;
 XScuGic INTCInst;
-XGpio GpioLED,GpioBTN;
-void BTN_Intr_Handler(void* InstPtr);
-void IntrSystemSetup(XScuGic *XScuGicInstancePtr);
-void IntcInitFunction(u16 DeviceId, XGpio *GpioInstancePtr);
-int main()
+XTmrCtr TMRInst;
+static int led_data = 1;
+static int btn_value;
+static int tmr_count;
+static int led_trigger = 0;
+volatile int tmr_trigger = 0;
+//----------------------------------------------------
+// PROTOTYPE FUNCTIONS
+//----------------------------------------------------
+static void BTN_Intr_Handler(void *baseaddr_p);
+static void TMR_Intr_Handler(void *baseaddr_p);
+static int InterruptSystemSetup(XScuGic *XScuGicInstancePtr);
+static int IntcInitFunction(u16 DeviceId, XTmrCtr *TmrInstancePtr, XGpio *GpioInstancePtr);
+
+//----------------------------------------------------
+// INTERRUPT HANDLER FUNCTIONS
+// - called by the timer, button interrupt, performs
+// - LED flashing
+//----------------------------------------------------
+
+
+void BTN_Intr_Handler(void *InstancePtr)
 {
+	// Disable GPIO interrupts
+	int ii;
+
+	//XGpio_InterruptDisable(&BTNInst, BTN_INT);
+	//XTmrCtr_Stop(&TMRInst, 0);
+	// Ignore additional button presses
+	if ((XGpio_InterruptGetStatus(&BTNInst) & BTN_INT) !=
+			BTN_INT) {
+			return;
+		}
 
 
-	int status,ii;
+	XGpio_InterruptClear(&BTNInst, BTN_INT);
+	for(ii=0;ii<1500;ii++)
+	{;
+
+	}
+	btn_value = XGpio_DiscreteRead(&BTNInst, 1);
+	if(btn_value!=1){return;}
+	// Increment counter based on button value
+	// Reset if centre button pressed
 
 
-    init_platform();
-    status = XGpio_Initialize(&GpioLED, GPIO_LED_DEVICE_ID);
-    status = XGpio_Initialize(&GpioBTN,GPIO_BUTTON_DEVICE_ID);
+    //XGpio_DiscreteWrite(&LEDInst, 1, led_data);
+	if(led_trigger ==0)
+	{
+		XTmrCtr_Reset(&TMRInst,0);
+		XTmrCtr_Start(&TMRInst, 0);
+	}
+	else
+	{
+		XTmrCtr_Stop(&TMRInst, 0);
+	}
+	led_trigger = led_trigger^1;
 
-    XGpio_SetDataDirection(&GpioLED,1, 0);
-    XGpio_SetDataDirection(&GpioBTN,1,0xff);
-    IntcInitFunction(INTC_DEVICE_ID,&GpioBTN);
-
-    while(1)
-    {
-
-    }
-
-
-
-
-    cleanup_platform();
-    return 0;
+    // Enable GPIO interrupts
+    //XGpio_InterruptEnable(&BTNInst, BTN_INT);
 }
 
-void BTN_Intr_Handler(void* InstPtr)
+void TMR_Intr_Handler(void *data)
 {
-	u32 temp_state;
-	XGpio_InterruptDisable(&GpioBTN, BTN_INT);
-	temp_state = XGpio_InterruptGetStatus(&GpioBTN);
-	if (( temp_state& BTN_INT) !=BTN_INT) {
-	 return;
-	 }
-	XGpio_DiscreteWrite(&GpioLED, 1, LED);
-	XGpio_InterruptClear(&GpioBTN, BTN_INT);
-	XGpio_InterruptEnable(&GpioBTN, BTN_INT);
+	if (XTmrCtr_IsExpired(&TMRInst,0)){
+		// Once timer has expired 3 times, stop, increment counter
+		// reset timer and start running again
+		if(tmr_count == 3){
+			//XTmrCtr_Stop(&TMRInst,0);
+			tmr_count = 0;
+			if(tmr_trigger == 0)
+			{
+				XGpio_DiscreteWrite(&LEDInst, 1, led_data);
+			}
+			else
+			{
+				XGpio_DiscreteClear(&LEDInst, 1, led_data);
+			}
+			tmr_trigger = tmr_trigger ^1;
+			XTmrCtr_Reset(&TMRInst,0);
+			//XTmrCtr_Start(&TMRInst,0);
+
+		}
+		else tmr_count++;
+	}
 }
 
-void IntcInitFunction(u16 DeviceId, XGpio *GpioInstancePtr)
-{
-	 XScuGic_Config *IntcConfig;
-	 int status;
-	 IntcConfig = XScuGic_LookupConfig(DeviceId);
-	 status = XScuGic_CfgInitialize(&INTCInst,IntcConfig,IntcConfig->CpuBaseAddress);
-	 IntrSystemSetup(&INTCInst);
-	 status = XScuGic_Connect(&INTCInst,INTC_GPIO_INTERRUPT_ID,(Xil_ExceptionHandler)BTN_Intr_Handler,(void*)GpioInstancePtr);
-	 XGpio_InterruptEnable(GpioInstancePtr, BTN_INT);
-	 XGpio_InterruptGlobalEnable(GpioInstancePtr);
-	 XScuGic_Enable(&INTCInst, INTC_GPIO_INTERRUPT_ID);
 
+
+//----------------------------------------------------
+// MAIN FUNCTION
+//----------------------------------------------------
+int main (void)
+{
+  int status;
+  //----------------------------------------------------
+  // INITIALIZE THE PERIPHERALS & SET DIRECTIONS OF GPIO
+  //----------------------------------------------------
+  // Initialise LEDs
+  status = XGpio_Initialize(&LEDInst, LEDS_DEVICE_ID);
+  if(status != XST_SUCCESS) return XST_FAILURE;
+  // Initialise Push Buttons
+  status = XGpio_Initialize(&BTNInst, BTNS_DEVICE_ID);
+  if(status != XST_SUCCESS) return XST_FAILURE;
+  // Set LEDs direction to outputs
+  XGpio_SetDataDirection(&LEDInst, 1, 0x00);
+  // Set all buttons direction to inputs
+  XGpio_SetDataDirection(&BTNInst, 1, 0xFF);
+
+
+  //----------------------------------------------------
+  // SETUP THE TIMER
+  //----------------------------------------------------
+  status = XTmrCtr_Initialize(&TMRInst, TMR_DEVICE_ID);
+  if(status != XST_SUCCESS) return XST_FAILURE;
+  XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+  XTmrCtr_SetResetValue(&TMRInst, 0, TMR_LOAD);
+  XTmrCtr_SetOptions(&TMRInst, 0, XTC_INT_MODE_OPTION | XTC_AUTO_RELOAD_OPTION);
+
+
+  // Initialize interrupt controller
+  status = IntcInitFunction(INTC_DEVICE_ID, &TMRInst, &BTNInst);
+  if(status != XST_SUCCESS) return XST_FAILURE;
+
+
+
+
+
+  while(1);
+
+  return 0;
 }
 
+//----------------------------------------------------
+// INITIAL SETUP FUNCTIONS
+//----------------------------------------------------
 
-
-void IntrSystemSetup(XScuGic *XScuGicInstancePtr)
+int InterruptSystemSetup(XScuGic *XScuGicInstancePtr)
 {
-	//XGpio_InterruptEnable(&GpioBTN,BTN_INT);
-	//XGpio_InterruptGlobalEnable(&GpioBTN);
-	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,(Xil_ExceptionHandler) XScuGic_InterruptHandler,XScuGicInstancePtr);
+	// Enable interrupt
+	XGpio_InterruptEnable(&BTNInst, BTN_INT);
+	XGpio_InterruptGlobalEnable(&BTNInst);
+
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+			 	 	 	 	 	 (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+			 	 	 	 	 	 XScuGicInstancePtr);
 	Xil_ExceptionEnable();
+
+
+	return XST_SUCCESS;
+
 }
+
+int IntcInitFunction(u16 DeviceId, XTmrCtr *TmrInstancePtr, XGpio *GpioInstancePtr)
+{
+	XScuGic_Config *IntcConfig;
+	int status;
+
+	// Interrupt controller initialisation
+	IntcConfig = XScuGic_LookupConfig(DeviceId);
+	status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+	if(status != XST_SUCCESS) return XST_FAILURE;
+
+	// Call to interrupt setup
+	status = InterruptSystemSetup(&INTCInst);
+	if(status != XST_SUCCESS) return XST_FAILURE;
+
+	// Connect GPIO interrupt to handler
+	status = XScuGic_Connect(&INTCInst,
+					  	  	 INTC_GPIO_INTERRUPT_ID,
+					  	  	 (Xil_ExceptionHandler)BTN_Intr_Handler,
+					  	  	 (void *)GpioInstancePtr);
+	if(status != XST_SUCCESS) return XST_FAILURE;
+
+
+	// Connect timer interrupt to handler
+	status = XScuGic_Connect(&INTCInst,
+							 INTC_TMR_INTERRUPT_ID,
+							 (Xil_ExceptionHandler)TMR_Intr_Handler,
+							 (void *)TmrInstancePtr);
+	if(status != XST_SUCCESS) return XST_FAILURE;
+
+	// Enable GPIO interrupts interrupt
+	XGpio_InterruptEnable(GpioInstancePtr, 1);
+	XGpio_InterruptGlobalEnable(GpioInstancePtr);
+
+	// Enable GPIO and timer interrupts in the controller
+	XScuGic_Enable(&INTCInst, INTC_GPIO_INTERRUPT_ID);
+
+	XScuGic_Enable(&INTCInst, INTC_TMR_INTERRUPT_ID);
+
+
+	return XST_SUCCESS;
+}
+

@@ -43,6 +43,8 @@ set_property used_in_implementation false [get_files -all c:/Users/bop/Documents
 set_property used_in_implementation false [get_files -all c:/Users/bop/Documents/GitHub/FPGA/simle_start/simle_start.srcs/sources_1/bd/simple_led/ip/simple_led_axi_gpio_1_0/simple_led_axi_gpio_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/bop/Documents/GitHub/FPGA/simle_start/simle_start.srcs/sources_1/bd/simple_led/ip/simple_led_axi_gpio_1_0/simple_led_axi_gpio_1_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/bop/Documents/GitHub/FPGA/simle_start/simle_start.srcs/sources_1/bd/simple_led/ip/simple_led_xbar_0/simple_led_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/bop/Documents/GitHub/FPGA/simle_start/simle_start.srcs/sources_1/bd/simple_led/ip/simple_led_axi_timer_0_0/simple_led_axi_timer_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/bop/Documents/GitHub/FPGA/simle_start/simle_start.srcs/sources_1/bd/simple_led/ip/simple_led_axi_timer_0_0/simple_led_axi_timer_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/bop/Documents/GitHub/FPGA/simle_start/simle_start.srcs/sources_1/bd/simple_led/ip/simple_led_auto_pc_0/simple_led_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all C:/Users/bop/Documents/GitHub/FPGA/simle_start/simle_start.srcs/sources_1/bd/simple_led/simple_led_ooc.xdc]
 

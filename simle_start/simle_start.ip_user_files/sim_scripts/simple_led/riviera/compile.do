@@ -19,6 +19,9 @@ vlib riviera/axi_register_slice_v2_1_16
 vlib riviera/fifo_generator_v13_2_2
 vlib riviera/axi_data_fifo_v2_1_15
 vlib riviera/axi_crossbar_v2_1_17
+vlib riviera/lib_pkg_v1_0_2
+vlib riviera/axi_timer_v2_0_18
+vlib riviera/xlconcat_v2_1_1
 vlib riviera/axi_protocol_converter_v2_1_16
 
 vmap xilinx_vip riviera/xilinx_vip
@@ -39,6 +42,9 @@ vmap axi_register_slice_v2_1_16 riviera/axi_register_slice_v2_1_16
 vmap fifo_generator_v13_2_2 riviera/fifo_generator_v13_2_2
 vmap axi_data_fifo_v2_1_15 riviera/axi_data_fifo_v2_1_15
 vmap axi_crossbar_v2_1_17 riviera/axi_crossbar_v2_1_17
+vmap lib_pkg_v1_0_2 riviera/lib_pkg_v1_0_2
+vmap axi_timer_v2_0_18 riviera/axi_timer_v2_0_18
+vmap xlconcat_v2_1_1 riviera/xlconcat_v2_1_1
 vmap axi_protocol_converter_v2_1_16 riviera/axi_protocol_converter_v2_1_16
 
 vlog -work xilinx_vip  -sv2k12 "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/ec67/hdl" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/02c8/hdl/verilog" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/b193/hdl" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
@@ -123,6 +129,21 @@ vlog -work axi_crossbar_v2_1_17  -v2k5 "+incdir+../../../../simle_start.srcs/sou
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/ec67/hdl" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/02c8/hdl/verilog" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/b193/hdl" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/ec67/hdl" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/02c8/hdl/verilog" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/b193/hdl" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
 "../../../bd/simple_led/ip/simple_led_xbar_0/sim/simple_led_xbar_0.v" \
+
+vcom -work lib_pkg_v1_0_2 -93 \
+"../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
+
+vcom -work axi_timer_v2_0_18 -93 \
+"../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/cf75/hdl/axi_timer_v2_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -93 \
+"../../../bd/simple_led/ip/simple_led_axi_timer_0_0/sim/simple_led_axi_timer_0_0.vhd" \
+
+vlog -work xlconcat_v2_1_1  -v2k5 "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/ec67/hdl" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/02c8/hdl/verilog" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/b193/hdl" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/ec67/hdl" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/02c8/hdl/verilog" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/b193/hdl" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
+"../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/ec67/hdl" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/02c8/hdl/verilog" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/b193/hdl" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/ec67/hdl" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/02c8/hdl/verilog" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/b193/hdl" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
+"../../../bd/simple_led/ip/simple_led_xlconcat_0_0/sim/simple_led_xlconcat_0_0.v" \
 
 vlog -work axi_protocol_converter_v2_1_16  -v2k5 "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/ec67/hdl" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/02c8/hdl/verilog" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/b193/hdl" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/ec67/hdl" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/02c8/hdl/verilog" "+incdir+../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/b193/hdl" "+incdir+C:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
 "../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/1229/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

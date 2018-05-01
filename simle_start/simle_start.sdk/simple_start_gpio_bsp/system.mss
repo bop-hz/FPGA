@@ -6,6 +6,7 @@ BEGIN OS
  PARAMETER OS_NAME = standalone
  PARAMETER OS_VER = 6.6
  PARAMETER PROC_INSTANCE = ps7_cortexa9_0
+ PARAMETER profile_timer = axi_timer_0
  PARAMETER sleep_timer = ps7_globaltimer_0
  PARAMETER stdin = ps7_uart_1
  PARAMETER stdout = ps7_uart_1
@@ -233,6 +234,12 @@ BEGIN DRIVER
  PARAMETER DRIVER_NAME = gpio
  PARAMETER DRIVER_VER = 4.3
  PARAMETER HW_INSTANCE = axi_gpio_1
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = tmrctr
+ PARAMETER DRIVER_VER = 4.4
+ PARAMETER HW_INSTANCE = axi_timer_0
 END
 
 

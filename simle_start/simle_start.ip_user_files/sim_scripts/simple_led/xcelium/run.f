@@ -81,6 +81,21 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/simple_led/ip/simple_led_xbar_0/sim/simple_led_xbar_0.v" \
 -endlib
+-makelib xcelium_lib/lib_pkg_v1_0_2 \
+  "../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/axi_timer_v2_0_18 \
+  "../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/cf75/hdl/axi_timer_v2_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/simple_led/ip/simple_led_axi_timer_0_0/sim/simple_led_axi_timer_0_0.vhd" \
+-endlib
+-makelib xcelium_lib/xlconcat_v2_1_1 \
+  "../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/simple_led/ip/simple_led_xlconcat_0_0/sim/simple_led_xlconcat_0_0.v" \
+-endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_16 \
   "../../../../simle_start.srcs/sources_1/bd/simple_led/ipshared/1229/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib

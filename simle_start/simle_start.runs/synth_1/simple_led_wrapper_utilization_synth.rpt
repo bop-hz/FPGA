@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Sat Apr 28 21:15:56 2018
+| Date         : Tue May  1 09:09:54 2018
 | Host         : DESKTOP-55SCUS4 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file simple_led_wrapper_utilization_synth.rpt -pb simple_led_wrapper_utilization_synth.pb
 | Design       : simple_led_wrapper
@@ -157,9 +157,11 @@ Table of Contents
 +-----------------------------------+------+
 |              Ref Name             | Used |
 +-----------------------------------+------+
+| simple_led_xlconcat_0_0           |    1 |
 | simple_led_xbar_0                 |    1 |
 | simple_led_rst_ps7_0_100M_0       |    1 |
 | simple_led_processing_system7_0_0 |    1 |
+| simple_led_axi_timer_0_0          |    1 |
 | simple_led_axi_gpio_1_0           |    1 |
 | simple_led_axi_gpio_0_0           |    1 |
 | simple_led_auto_pc_0              |    1 |

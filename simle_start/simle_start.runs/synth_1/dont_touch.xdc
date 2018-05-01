@@ -22,6 +22,12 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==simple_led_axi_
 # IP: bd/simple_led/ip/simple_led_xbar_0/simple_led_xbar_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==simple_led_xbar_0 || ORIG_REF_NAME==simple_led_xbar_0} -quiet] -quiet
 
+# IP: bd/simple_led/ip/simple_led_axi_timer_0_0/simple_led_axi_timer_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==simple_led_axi_timer_0_0 || ORIG_REF_NAME==simple_led_axi_timer_0_0} -quiet] -quiet
+
+# IP: bd/simple_led/ip/simple_led_xlconcat_0_0/simple_led_xlconcat_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==simple_led_xlconcat_0_0 || ORIG_REF_NAME==simple_led_xlconcat_0_0} -quiet] -quiet
+
 # IP: bd/simple_led/ip/simple_led_auto_pc_0/simple_led_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==simple_led_auto_pc_0 || ORIG_REF_NAME==simple_led_auto_pc_0} -quiet] -quiet
 

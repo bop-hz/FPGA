@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
 // Date        : Sat Apr 28 21:11:26 2018
 // Host        : DESKTOP-55SCUS4 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/bop/Documents/GitHub/FPGA/simle_start/simle_start.srcs/sources_1/bd/simple_led/ip/simple_led_axi_gpio_1_0/simple_led_axi_gpio_1_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top simple_led_axi_gpio_1_0 -prefix
+//               simple_led_axi_gpio_1_0_ simple_led_axi_gpio_1_0_stub.v
 // Design      : simple_led_axi_gpio_1_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1

@@ -1646,3 +1646,2891 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
+20:07:20 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:119:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25428	   2752	  22632	  50812	   c67c	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+20:09:57 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:13:28 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:120:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25456	   2752	  22632	  50840	   c698	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+20:18:45 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:20:32 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:21:01 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:35:01 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:120:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25480	   2752	  22632	  50864	   c6b0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+20:40:58 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:42:18 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:45:05 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:47:58 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:121:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25480	   2752	  22632	  50864	   c6b0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+20:48:04 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:49:02 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:49:22 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:49:47 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:121:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25464	   2752	  22632	  50848	   c6a0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+20:49:51 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:50:55 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:122:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25480	   2752	  22632	  50864	   c6b0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+20:52:34 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:53:41 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:122:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25480	   2752	  22632	  50864	   c6b0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+20:54:19 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:55:56 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:123:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25480	   2752	  22632	  50864	   c6b0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+20:56:55 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:57:52 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:123:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25480	   2752	  22632	  50864	   c6b0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+20:58:06 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:01:42 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:02:15 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:03:54 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:123:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25448	   2752	  22632	  50832	   c690	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+21:04:01 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:04:23 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:06:05 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:125:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25484	   2752	  22632	  50868	   c6b4	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+21:07:52 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:09:29 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:125:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25452	   2752	  22632	  50836	   c694	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+21:09:51 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:11:01 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:125:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25452	   2752	  22632	  50836	   c694	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+21:11:25 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:17:03 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:125:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25452	   2752	  22632	  50836	   c694	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+21:17:20 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:18:53 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:125:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25484	   2752	  22632	  50868	   c6b4	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+21:27:51 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:125:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25512	   2752	  22632	  50896	   c6d0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+21:29:30 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:34:29 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:125:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25512	   2752	  22632	  50896	   c6d0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+21:34:54 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:35:44 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:36:07 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:125:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25512	   2752	  22632	  50896	   c6d0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+21:36:16 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:36:47 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:37:07 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:125:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25512	   2752	  22632	  50896	   c6d0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+21:37:13 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:37:52 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:39:30 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:125:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25512	   2752	  22632	  50896	   c6d0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+21:39:49 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:40:19 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:40:42 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:41:34 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:125:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25512	   2752	  22632	  50896	   c6d0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+21:42:18 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:125:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25496	   2752	  22632	  50880	   c6c0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+21:42:34 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:43:30 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:125:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25512	   2752	  22632	  50896	   c6d0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+21:45:55 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:125:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25528	   2752	  22632	  50912	   c6e0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+21:49:44 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+21:50:46 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:00:57 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:13:19 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:116:8: error: expected expression before ')' token
+  while()
+        ^
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:131:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+make: *** [src/helloworld.o] Error 1
+22:13:30 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:131:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25576	   2752	  22632	  50960	   c710	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+22:14:55 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:16:26 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:132:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25552	   2752	  22632	  50936	   c6f8	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+22:17:15 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:25:45 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:32:58 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:99:6: warning: variable 'btn_value' set but not used [-Wunused-but-set-variable]
+  int btn_value;
+      ^~~~~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:134:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25576	   2752	  22632	  50960	   c710	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+22:33:49 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:40:35 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:41:15 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:42:22 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:17:49 **** Auto Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:99:6: warning: variable 'btn_value' set but not used [-Wunused-but-set-variable]
+  int btn_value;
+      ^~~~~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:132:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25544	   2752	  22632	  50928	   c6f0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+23:18:00 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:18:50 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:22:45 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:22:50 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:23:26 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:24:04 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:24:21 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:34:10 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:99:6: warning: variable 'btn_value' set but not used [-Wunused-but-set-variable]
+  int btn_value;
+      ^~~~~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:132:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25568	   2752	  22632	  50952	   c708	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+23:34:50 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+23:35:53 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:73:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:99:6: warning: variable 'btn_value' set but not used [-Wunused-but-set-variable]
+  int btn_value;
+      ^~~~~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:132:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25544	   2752	  22632	  50928	   c6f0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+23:39:52 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:72:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:98:6: warning: variable 'btn_value' set but not used [-Wunused-but-set-variable]
+  int btn_value;
+      ^~~~~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:131:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25544	   2752	  22632	  50928	   c6f0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+23:41:58 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:72:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:98:6: warning: variable 'btn_value' set but not used [-Wunused-but-set-variable]
+  int btn_value;
+      ^~~~~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:131:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25544	   2752	  22632	  50928	   c6f0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+23:45:32 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:72:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:133:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25564	   2752	  22632	  50948	   c704	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+19:44:18 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:72:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:105:2: warning: implicit declaration of function 'fpr' [-Wimplicit-function-declaration]
+  fpr(ii=0;ii<100;ii++)
+  ^~~
+../src/helloworld.c:105:10: error: expected ')' before ';' token
+  fpr(ii=0;ii<100;ii++)
+          ^
+../src/helloworld.c:106:2: error: expected ';' before '{' token
+  {;}
+  ^
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:135:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+make: *** [src/helloworld.o] Error 1
+19:44:56 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:72:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:137:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25600	   2752	  22632	  50984	   c728	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+19:45:33 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+08:50:02 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+11:41:06 **** Incremental Build of project simple_start_gpio_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_6/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+xsdps.c: In function 'XSdPs_FrameCmd':
+xsdps.c:1272:11: warning: this statement may fall through [-Wimplicit-fallthrough=]
+    RetVal |= RESP_R1 | (u32)XSDPS_DAT_PRESENT_SEL_MASK;
+xsdps.c:1273:3: note: here
+   case ACMD41:
+   ^~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_6/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+11:41:30 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:76:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:76:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:55:32: error: 'XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR' undeclared (first use in this function); did you mean 'XPAR_FABRIC_AXI_GPIO_1_IP2INTC_IRPT_INTR'?
+ #define INTC_GPIO_INTERRUPT_ID XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+                                ^
+../src/helloworld.c:55:32: note: in definition of macro 'INTC_GPIO_INTERRUPT_ID'
+ #define INTC_GPIO_INTERRUPT_ID XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:55:32: note: each undeclared identifier is reported only once for each function it appears in
+ #define INTC_GPIO_INTERRUPT_ID XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+                                ^
+../src/helloworld.c:55:32: note: in definition of macro 'INTC_GPIO_INTERRUPT_ID'
+ #define INTC_GPIO_INTERRUPT_ID XPAR_FABRIC_AXI_GPIO_0_IP2INTC_IRPT_INTR
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:141:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+make: *** [src/helloworld.o] Error 1
+12:19:22 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:76:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:76:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:141:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25600	   2752	  22680	  51032	   c758	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+13:25:16 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:76:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:76:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:146:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25692	   2752	  22680	  51124	   c7b4	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+15:43:03 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:90:34: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+     XTmrCtr_SetHandler(&TMR_INST,CTMR_Intr_Handler,&TMR_INST);
+                                  ^~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:54:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:80:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:80:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:180:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29040	   2768	  22680	  54488	   d4d8	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+15:43:50 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:90:52: error: 'null' undeclared (first use in this function)
+     XTmrCtr_SetHandler(&TMR_INST,CTMR_Intr_Handler,null);
+                                                    ^~~~
+../src/helloworld.c:90:52: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:90:34: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+     XTmrCtr_SetHandler(&TMR_INST,CTMR_Intr_Handler,null);
+                                  ^~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:54:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:80:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:80:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:180:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+make: *** [src/helloworld.o] Error 1
+15:44:01 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:90:34: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+     XTmrCtr_SetHandler(&TMR_INST,CTMR_Intr_Handler,NULL);
+                                  ^~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:54:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:80:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:80:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:180:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29036	   2768	  22680	  54484	   d4d4	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+15:45:21 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:90:34: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+     XTmrCtr_SetHandler(&TMR_INST,CTMR_Intr_Handler,(void*)NULL);
+                                  ^~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:54:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:80:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:80:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:180:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29036	   2768	  22680	  54484	   d4d4	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+15:52:25 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:90:34: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+     XTmrCtr_SetHandler(&TMR_INST,CTMR_Intr_Handler,&TMR_INST);
+                                  ^~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:54:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:80:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:80:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:180:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29040	   2768	  22680	  54488	   d4d8	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+15:54:51 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:80:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:180:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29048	   2768	  22680	  54496	   d4e0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+15:56:56 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:58:26 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:00:27 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:80:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:180:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29048	   2768	  22680	  54496	   d4e0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+16:01:54 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:03:21 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:08:13 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:09:58 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:80:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:180:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29048	   2768	  22680	  54496	   d4e0	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+16:10:25 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:12:10 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:80:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:176:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29008	   2768	  22680	  54456	   d4b8	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+16:13:45 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:80:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:176:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29012	   2768	  22680	  54460	   d4bc	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+16:14:33 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:18:25 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:80:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:176:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29008	   2768	  22680	  54456	   d4b8	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+16:19:11 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:20:32 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:80:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:172:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28956	   2768	  22680	  54404	   d484	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+16:20:38 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:20:57 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:23:49 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:13: warning: unused variable 'ii' [-Wunused-variable]
+  int status,ii;
+             ^~
+../src/helloworld.c:80:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+  int status,ii;
+      ^~~~~~
+../src/helloworld.c: In function 'IntcInitFunction':
+../src/helloworld.c:173:7: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   int status;
+       ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29264	   2768	  22680	  54712	   d5b8	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+16:25:19 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:126:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28692	   2768	  22680	  54140	   d37c	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+16:26:27 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:28:07 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:126:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28692	   2768	  22680	  54140	   d37c	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+16:34:20 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:46:02 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:128:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28592	   2768	  22680	  54040	   d318	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+16:46:42 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:47:02 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:47:44 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:128:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28592	   2768	  22680	  54040	   d318	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+16:48:13 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+16:56:34 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:136:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29076	   2768	  22680	  54524	   d4fc	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+16:57:45 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:136:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29044	   2768	  22680	  54492	   d4dc	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+16:58:12 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:04:33 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:144:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29128	   2768	  22680	  54576	   d530	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+17:05:36 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:06:58 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:09:13 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:144:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29108	   2768	  22680	  54556	   d51c	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+17:09:42 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:11:14 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29168	   2768	  22680	  54616	   d558	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+17:11:42 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:14:17 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29168	   2768	  22680	  54616	   d558	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+17:19:08 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:19:43 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:151:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29140	   2768	  22680	  54588	   d53c	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+17:25:50 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:151:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29144	   2768	  22680	  54592	   d540	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+17:26:21 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:30:57 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:152:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29144	   2768	  22680	  54592	   d540	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+17:33:29 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:64:6: warning: unused variable 'ii' [-Wunused-variable]
+  int ii;
+      ^~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29084	   2768	  22680	  54532	   d504	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+17:33:40 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:34:16 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:38:38 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:64:6: warning: unused variable 'ii' [-Wunused-variable]
+  int ii;
+      ^~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29084	   2768	  22680	  54532	   d504	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+17:43:12 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:64:6: warning: unused variable 'ii' [-Wunused-variable]
+  int ii;
+      ^~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:150:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29100	   2768	  22680	  54548	   d514	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+17:43:32 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:46:49 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:64:6: warning: unused variable 'ii' [-Wunused-variable]
+  int ii;
+      ^~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:143:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29072	   2768	  22680	  54520	   d4f8	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+17:48:26 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:64:6: warning: unused variable 'ii' [-Wunused-variable]
+  int ii;
+      ^~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:143:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29072	   2768	  22680	  54520	   d4f8	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+17:50:35 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:146:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29108	   2768	  22680	  54556	   d51c	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+17:50:58 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+17:54:34 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:147:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29140	   2768	  22680	  54588	   d53c	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+20:12:46 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:64:6: warning: unused variable 'ii' [-Wunused-variable]
+  int ii;
+      ^~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:146:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29116	   2768	  22680	  54564	   d524	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+20:14:40 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:15:01 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:16:49 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:17:50 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:18:10 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:21:02 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'BTN_Intr_Handler':
+../src/helloworld.c:64:6: warning: unused variable 'ii' [-Wunused-variable]
+  int ii;
+      ^~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:146:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29084	   2768	  22680	  54532	   d504	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+20:22:19 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:150:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29124	   2768	  22680	  54572	   d52c	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
+20:30:50 **** Incremental Build of configuration Debug for project simple_start_gpio ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../simple_start_gpio_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:155:32: warning: passing argument 2 of 'XTmrCtr_SetHandler' from incompatible pointer type [-Wincompatible-pointer-types]
+   XTmrCtr_SetHandler(&TMRInst, TMR_Intr_Handler, &TMRInst);
+                                ^~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:22:0:
+../../simple_start_gpio_bsp/ps7_cortexa9_0/include/xtmrctr.h:306:6: note: expected 'XTmrCtr_Handler {aka void (*)(void *, unsigned char)}' but argument is of type 'void (*)(void *)'
+ void XTmrCtr_SetHandler(XTmrCtr * InstancePtr, XTmrCtr_Handler FuncPtr,
+      ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: simple_start_gpio.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../simple_start_gpio_bsp/ps7_cortexa9_0/lib -o "simple_start_gpio.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: simple_start_gpio.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size simple_start_gpio.elf  |tee "simple_start_gpio.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29164	   2768	  22680	  54612	   d554	simple_start_gpio.elf
+'Finished building: simple_start_gpio.elf.size'
+' '
